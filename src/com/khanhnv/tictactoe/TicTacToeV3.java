@@ -47,14 +47,21 @@ public class TicTacToeV3 {
     public void startGame() {
         var scanner = new Scanner(System.in);
         boolean reRun = true;
-        System.out.print("Input command:");
         do {
             try {
+                System.out.print("Input command:");
                 String line = scanner.nextLine().trim();
                 String[] commands = line.split(" ");
-                if (isEmpty(line) || commands.length != 3) {
+                if (isEmpty(line)) {
                     System.out.println("Bad parameters!");
-                    System.out.print("Input command:");
+                    reRun = true;
+                    continue;
+                }
+                if (commands[0].equalsIgnoreCase("exit")) {
+                    return;
+                }
+                if (commands.length != 3) {
+                    System.out.println("Bad parameters!");
                     reRun = true;
                     continue;
                 }
@@ -63,7 +70,6 @@ public class TicTacToeV3 {
                 String player2 = commands[2];
                 if (isEmpty(command) || isEmpty(player1) || isEmpty(player2) || !isUserOrAI(player1) || !isUserOrAI(player2)) {
                     System.out.println("Bad parameters!");
-                    System.out.print("Input command:");
                     reRun = true;
                 } else {
                     this.player1 = player1;
@@ -73,12 +79,11 @@ public class TicTacToeV3 {
                         reRun = false;
                     } else {
                         play();
-                        System.out.print("Input command:");
+                        System.out.println("");
                     }
                 }
             } catch (Exception e) {
                 System.out.println("Bad parameters!");
-                System.out.print("Input command:");
                 reRun = true;
             }
         } while (reRun);
