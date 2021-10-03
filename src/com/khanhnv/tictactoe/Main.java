@@ -6,7 +6,8 @@ public class Main {
         // write your code here
         //var game = new TicTacToe();
         //var game = new TicTacToeV2();
-        var game = new TicTacToeV3();
+        //var game = new TicTacToeV3();
+        var game = new TicTacToeV4();
         game.startGame();
     }
 }
