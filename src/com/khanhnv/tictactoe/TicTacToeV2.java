@@ -3,7 +3,7 @@ package com.khanhnv.tictactoe;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Game2 {
+public class TicTacToeV2 {
 
     char PLAYER_X = 'X';
     char PLAYER_O = 'O';
@@ -135,7 +135,7 @@ public class Game2 {
                     System.out.println("Draw");
                     return false;
                 } else {
-//          System.out.println("Game not finished");
+//          System.out.println("TicTacToe not finished");
                     return true;
                 }
             }

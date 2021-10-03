@@ -2,7 +2,7 @@ package com.khanhnv.tictactoe;
 
 import java.util.Scanner;
 
-public class Game {
+public class TicTacToe {
 
     char PLAYER_X = 'X';
     char PLAYER_O = 'O';
@@ -104,7 +104,7 @@ public class Game {
                 if (isComplete) {
                     System.out.println("Draw");
                 } else {
-                    System.out.println("Game not finished");
+                    System.out.println("TicTacToe not finished");
                 }
             }
         }
