@@ -104,7 +104,7 @@ public class TicTacToe {
                 if (isComplete) {
                     System.out.println("Draw");
                 } else {
-                    System.out.println("TicTacToe not finished");
+                    System.out.println("Game not finished");
                 }
             }
         }
