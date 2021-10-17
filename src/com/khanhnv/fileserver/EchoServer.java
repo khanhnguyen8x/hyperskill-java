@@ -1,4 +1,4 @@
-package com.khanhnv.common;
+package com.khanhnv.fileserver;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
