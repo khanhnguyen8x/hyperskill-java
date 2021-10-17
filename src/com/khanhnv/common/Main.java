@@ -1,4 +1,4 @@
-package com.khanhnv;
+package com.khanhnv.common;
 
 public class Main {
 
