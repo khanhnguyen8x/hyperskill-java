@@ -1,7 +1,8 @@
 package com.khanhnv.fileserver2.server;
 
-import util.FileUtil;
-import util.IdUtil;
+
+import com.khanhnv.fileserver2.util.FileUtil;
+import com.khanhnv.fileserver2.util.IdUtil;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

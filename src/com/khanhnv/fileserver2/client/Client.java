@@ -1,6 +1,7 @@
 package com.khanhnv.fileserver2.client;
 
-import util.FileUtil;
+
+import com.khanhnv.fileserver2.util.FileUtil;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

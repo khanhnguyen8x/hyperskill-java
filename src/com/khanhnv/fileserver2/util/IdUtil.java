@@ -1,6 +1,7 @@
 package com.khanhnv.fileserver2.util;
 
-import server.Session;
+
+import com.khanhnv.fileserver2.server.Session;
 
 import java.io.*;
 import java.util.HashMap;
